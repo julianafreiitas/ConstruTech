@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+      font-family:"Open Sans", sans-serif;
+}
+
+.left{
+    background-color: #66a6e4;
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+}
+
+.left img{
+    width: 250px;
+    height: 250px;
+}
+
+.leftbtn{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+.leftbtn a{
+    text-decoration: none;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.leftbtn a:hover{
+    color: rgb(186, 224, 255);
+    background-color: #497db1;
+}
+
+.topo{
+    width: 1650px;
+    background-color: #eff6ff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topo h1{
+    width: 80%;
+    margin: 0px auto;
+    text-align: left;
+    font-size: 2.2em;
+}
+
+.catalogo {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.catalogo img{
+    height: 40px;
+}
+
+.catalogo li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
+}
+
+.catalogo li a{
+    text-decoration: none;
+    background-color: white;
+    border: 1.2px solid gray;
+    padding: 5px 15px;
+    border-radius: 999px;
+    color: black;
+}
