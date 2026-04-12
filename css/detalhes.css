@@ -1,0 +1,36 @@
+.conteudo{
+    height: 890px;
+    width: 87%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.box_detalhes{
+    height: 700px;
+    width: 700px;
+    background: red;
+}
+
+.formatacao{
+    color: white;
+    
+
+}
+
+.imagem{
+    height: 750px;
+    width: 750px;
+    background: rgb(68, 0, 255);
+}
+
+/* .linha{
+    background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+} */
