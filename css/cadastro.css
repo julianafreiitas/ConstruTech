@@ -111,7 +111,7 @@
   
 }
 
-/* Style the focus state for better user experience */
+
 input:focus {
   outline: none;
   border-color: #007bff;
