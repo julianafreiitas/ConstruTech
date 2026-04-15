@@ -1,10 +1,34 @@
+<?php
+require_once 'init.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+$codigos = array_column($_SESSION['produtos'], 'id');
+$novoCodigo = $codigos ? max($codigos) + 1: 1;
+
+$_SESSION['produtos'][] = [
+    'codigo_produto' => $novoCodigo,
+    'nome' => $_POST['nome'],
+    'preco' => $_POST['preco'],
+   'categoria' => $_POST['categoria'],
+    'quantidade' => $_POST['quantidade'],
+    'qtd_minima' => $_POST['qtd_minima'],
+    'qtd_maxima' => $_POST['qtd_maxima'],
+    'descricao' => $_POST['descricao'],
+    'imagem' => $_POST['imagem']
+];
+herder('Location: #.php?produtoadd=1');
+exit; 
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro -  <?php echo $nomeConstrutora; ?></title>
     <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 
@@ -24,17 +48,17 @@
             <div class="linha">
                 <div class="infor">
                     <h2 class="titulo">Nome</h2>
-                    <input class="campo" type="text">
+                    <input class="campo" type="text" name="nome">
                 </div>
 
                 <div class="infor">
                     <h2 class="titulo_p">Preço</h2>
-                    <input class="campo_p" type="text">
+                    <input class="campo_p" type="text" name="preco">
                 </div>
 
                 <div class="infor">
                     <h2 class="titulo">Qtd.</h2>
-                    <input class="campo_quantidade" type="text">
+                    <input class="campo_quantidade" type="text" name="quantidade">
                 </div>
             </div>
 
@@ -47,7 +71,7 @@
 
                     <div>
                         <h2 class="titulo">Categoria</h2>
-                        <input class="lista" list="categorias" name="#" placeholder="Selecionar categoria">
+                        <input class="lista" list="categorias" name="categoria" placeholder="Selecionar categoria">
 
                         <datalist id="categorias">
                             <option value="Acabamento">
@@ -62,7 +86,7 @@
                             <img class="img" src="./imagens/uplaod.png" alt="">
                             <i class="fa fa-cloud-upload"></i> Selecionar Imagem
                         </label>
-                        <input id="file-upload" type="file" accept="image/*" style="display:none;" />
+                        <input id="file-upload" type="file" name="imagem" accept="image/*" style="display:none;" />
                     </div>
 
                 </div>
