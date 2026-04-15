@@ -17,7 +17,7 @@ $_SESSION['produtos'][] = [
     'descricao' => $_POST['descricao'],
     'imagem' => $_POST['imagem']
 ];
-herder('Location: #.php?produtoadd=1');
+herder('Location: produtos.php?produtoadd=1');
 exit; 
 }
 ?>
