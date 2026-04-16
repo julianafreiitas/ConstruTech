@@ -1,5 +1,6 @@
 <?php
 require_once 'init.php';
+$categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
 ?>
 
 <!DOCTYPE html>
@@ -9,22 +10,27 @@ require_once 'init.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/produto.css">
-    <title>ConstruTech</title>
+    <title>Produtos - <?php echo $nomeConstrutora; ?></title>
 </head>
 
 <body>
    <?php
    require_once 'partials/header.php';
+
+
    ?>
     <main>
         <div class="topo">
             <h1>Produtos</h1>
-            <ul class="catalogo">
-                <img src="./imagens/filtro.png" alt="filtro">
-                <li><a href="#">Bruto</a></li>
-                <li><a href="#">Ferramentas</a></li>
-                <li><a href="#">Acabamento</a></li>
-            </ul>
+
+            <?php
+                echo '<ul class="catalogo">';
+                echo'<li><img src="./imagens/filtro.png" alt="filtro"></li>';
+                foreach ($categorias as $kcat => $nome) {
+                echo'<li><a href="produtos.php?categoria='.$kcat.'">'.$nome.'</a></li>';
+                }
+           echo'</ul>';
+            ?>
         </div>
         <table>
             <tr>
@@ -35,9 +41,12 @@ require_once 'init.php';
                 <th>Detalhes</th>
             </tr>
             <?php foreach ($_SESSION['produtos'] as $produto): ?>
+
+                 <?php if ($categoria_get == '' || $produto['categoria'] === $categoria): ?>
                 <tr>
                     <td>
                         <div>
+                           
                             <img src="<?php echo $produto['imagem']; ?>">
                             <p><?php echo $produto['nome']; ?></p>
                         </div>
@@ -51,12 +60,13 @@ require_once 'init.php';
                         <button class="btn">Ver mais</button>
                     </td>
                 </tr>
+                <?php endif; ?>
             <?php endforeach; ?>
-            <td>Bruto</td>
+            <!-- <td>Bruto</td>
             <td>R$95.00</td>
             <td>Disponível</td>
             <td><button href="#" class="btn">Ver mais</button></td>
-            </tr>
+            </tr> -->
         </table>
     </main>
 
