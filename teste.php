@@ -1,10 +1,17 @@
+<?php
+  require_once 'init.php';
+
+  $categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/produto.css">
-    <title>ConstruTech</title>
+    <title>Produtos - <?php echo $nomeConstrutora; ?></title>
 </head>
 <body>
     <header class="left">
@@ -17,6 +24,7 @@
     <main>
         <div class="topo">
             <h1>Produtos</h1>
+            
             <ul class="catalogo">
                 <img src="./imagens/filtro.png" alt="filtro">
                 <li><a href="#">Bruto</a></li>
