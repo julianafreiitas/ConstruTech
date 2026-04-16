@@ -82,11 +82,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                         <div>
 
-                            <label for="file-upload" class="custom-file-upload">
+                             <label for="file-upload" class="custom-file-upload">
                                 <img class="img" src="./imagens/uplaod.png" alt="">
                                 <i class="fa fa-cloud-upload"></i> Selecionar Imagem
                             </label>
                             <input type="text" name="imagem" placeholder="URL da imagem">
+
+
                         </div>
 
                     </div>

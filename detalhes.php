@@ -1,3 +1,24 @@
+<?php require_once 'init.php';
+
+if (isset($_GET['excluir'])){
+    $id = $_GET['excluir'];
+    if (isset($_SESSION['produtos'])){
+        foreach ($_SESSION['produtos'] as $posicao => $produto ){
+        if ( $produto['codigo_produto'] == $id){
+            unset($_SESSION['produtos'][$posicao]);
+            break;
+        }
+    }
+    $_SESSION['produtos'] = array_values($_SESSION['produtos']);
+
+    header("Location: produtos.php");
+    exit;
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -52,7 +73,7 @@
 
         
         <div >
-            <button class="botao"><b>Excluir</b></button>
+            <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'><b>Excluir</b></a>
         </div>
         
 

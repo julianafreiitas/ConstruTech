@@ -34,6 +34,7 @@ require_once 'init.php';
                 <th>Estado</th>
                 <th>Detalhes</th>
             </tr>
+
             <?php foreach ($_SESSION['produtos'] as $produto): ?>
                 <tr>
                     <td>
@@ -48,7 +49,7 @@ require_once 'init.php';
                         <?php echo ($produto['quantidade'] > 0) ? 'Disponível' : 'Indisponível'; ?>
                     </td>
                     <td>
-                        <button class="btn">Ver mais</button>
+                        <a href='detalhes.php?id=<?php echo $produto['codigo_produto']; ?>' class='btn'>Ver mais</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
