@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     gap: 60px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .titulo{
@@ -67,7 +67,8 @@
     height: 40px;
     border-radius: 5px;
     border: black solid 1px;
-     font-size: 25px;
+    font-size: 25px;
+    
 }
 
 .campo_p{
@@ -97,7 +98,7 @@
 
 
 .conteudo{
-    padding-left: 100px;
+    padding-left: 80px;
 }
 
 
@@ -175,6 +176,7 @@ input:focus {
     font-size: 20px;
     cursor: pointer;
     transition:cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.3s;
+
 }
 
 .botao_cadastrar:hover{
@@ -183,3 +185,4 @@ input:focus {
     color: rgb(31, 12, 209);
 
 }
+

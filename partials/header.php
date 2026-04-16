@@ -1,7 +1,7 @@
  <header class="left">
         <img src="./imagens/logo.png" alt="logo">
         <nav class="leftbtn">
-            <a href="#">Produto</a>
-            <a href="#">Cadastro</a>
+            <a href="produtos.php">Produto</a>
+            <a href="cadastro.php">Cadastro</a>
         </nav>
     </header>
