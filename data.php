@@ -1,8 +1,9 @@
 <?php
 $nomeConstrutora = "Construtech";
 
+
 $produtos_base = [
-    [
+[
     'codigo_produto' => 1,
     'nome' => 'cimento',
     'preco' => 250.00,
