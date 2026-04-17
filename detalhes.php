@@ -33,7 +33,7 @@ if ($index !== false){
                 <div class="formatacao">
                     <h1><?php echo $produto['nome']; ?></h1>
                     <p><?php echo $produto['categoria']?>
-                    <h2><?php echo $produto['preco'] ?></h2>
+                    <h2>Valor:R$ <?php echo $produto['preco'] ?></h2>
                     <p>Estoque:<?php echo $produto['quantidade']?></p>
                     <p>Código do produto:<?php echo $produto['codigo_produto']?></p>
                     <h2>Descrição:</h2>

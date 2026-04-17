@@ -11,7 +11,7 @@
 }
 
 .box_detalhes{
-    width: 600px;
+    width: 500px;
     /* background: red; */
     border-radius: 10px;
     border: #5c91ce solid 2px;
@@ -29,8 +29,8 @@
 }
 
 .imagem{
-    height: 750px;
-    width: 750px;
+    height: 650px;
+    width: 650px;
     background: #5c91ce;
     display: flex;
     justify-content: center;
@@ -40,8 +40,8 @@
 }
 
 .img{
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
     border-radius: 10px;
 }
 
