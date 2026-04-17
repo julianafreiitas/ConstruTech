@@ -1,8 +1,14 @@
 <?php require_once 'init.php';
-$id = $_GET['id'];
+$id_url = isset($_GET['id']) ? (int) $_GET['id']: 0;
+$codigos = array_column($_SESSION['produtos'], 'codigo_produto');
+$index = array_search($id_url, $codigos);
 
+if ($index !== false){
+    $produto = $_SESSION['produtos'][$index];
+}else{
+    header('Location: produtos.php');
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,48 +23,33 @@ $id = $_GET['id'];
 </head>
 
 <body>
-    <header class="left">
-        <img src="./imagens/logo.png" alt="logo">
-        <nav class="leftbtn">
-            <a href="#">Produto</a>
-            <a href="#">Cadastro</a>
-        </nav>
-    </header>
+    <?php
+    require_once 'partials/header.php';
+    ?>
 
     <div class="conteudo">
         <div class="linha">
             <div class="box_detalhes">
                 <div class="formatacao">
-                    <h1>Areia</h1>
-                    <p>Categoria</p>
-                    <h2>Valor:450.90</h2>
-                    <p>Estoque:25</p>
-                    <p>Código do produto:25</p>
+                    <h1><?php echo $produto['nome']; ?></h1>
+                    <p><?php echo $produto['categoria']?>
+                    <h2><?php echo $produto['preco'] ?></h2>
+                    <p>Estoque:<?php echo $produto['quantidade']?></p>
+                    <p>Código do produto:<?php echo $produto['codigo_produto']?></p>
                     <h2>Descrição:</h2>
-                    <p> A Areia Lavada Média de Pedra Moída em Saco 20kg é a escolha certa para quem busca qualidade,
-                        versatilidade e resistência em sua obra.
-                        Com granulometria entre 0,42 mm e 2 mm, ela une o equilíbrio perfeito entre a areia fina e a
-                        grossa, proporcionando ótima trabalhabilidade e aderência, sem abrir mão da durabilidade.
-                        É indicada para a fabricação de concretos estruturais (pilares, vigas e fundações), execução de
-                        contrapisos, enchimento de colunas, regularização de piscinas e superfícies impermeabilizadas.
-                        Também é perfeita para argamassas de assentamento de tijolos e blocos e para o chapisco, que
-                        garante a fixação ideal do reboco.
-                        Com embalagem prática de 20kg, a Areia Lavada Média é fácil de transportar, armazenar e usar em
-                        diferentes etapas da construção civil, garantindo mais agilidade e produtividade no canteiro de
-                        obras.
-                        Invista na areia certa e tenha mais eficiência e acabamento de qualidade em sua obra. </p>
+                    <p><?php echo $produto['descricao']?></p>
                 </div>
 
             </div>
 
             <div class="imagem">
-                <img class="img" src="./imagens/areia.jpg" alt="">
+                <img class="img" src="<?php echo $produto['imagem']; ?>" alt="">
             </div>
         </div>
 
         
         <div >
-            <a class="botao" href='produtos.php?excluir=<?php echo $_GET['id']; ?>'><b>Excluir</b></a>
+            <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'><b>Excluir</b></a>
         </div>
         
 
