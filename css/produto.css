@@ -15,7 +15,7 @@ body{
 .left{
     background-color: #66a6e4;
     height: 100%;
-    width: 15%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,8 +51,17 @@ body{
 }
 
 .topo{
-    width: 1650px;
+    width: 1660px;
     background-color: #eff6ff;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.catalogos{
+    width: 500px;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -64,6 +73,31 @@ body{
     margin: 0px auto;
     text-align: left;
     font-size: 2.2em;
+}
+
+.tb_estoque{
+    border-radius: 4px;
+    width: 290px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 150px;
+    gap: .6em;
+    background-color: #f3f9ff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.667);
+}
+
+.caixinha{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.caixinha p{
+    margin-left: 5px;
 }
 
 .catalogo {
@@ -92,44 +126,42 @@ body{
     color: black;
 }
 
-table {
-    width: 100%;
+table { 
     border-collapse: collapse;
     margin-bottom: 20px;
-    font-size: 20px;
-}
+    font-size: 20px; 
+} 
 
-td{
-    text-align: center;
-}
-
-td div{
+ td div{ 
     display: flex;
     align-items: center;
-    gap: 2em;
     justify-content: center;
-}
-
-tr img{
-    width: 50px;
-    height: 50px;
-
-}
-
-th, td {
+    width: 200px;
+    gap: 10px;
+ } 
+ 
+td img{ 
+    width: 40px;
+    height: 40px;
+ }
+ 
+ th, td{ 
     border: 1px solid black;
-    padding: 12px;
-}
-
-th {
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+ } 
+ 
+ th { 
     background-color: #f2f2f2;
-}
-.btn{
+ } 
+ 
+ .btn{ 
     font-size: 18px;
     padding: 5px;
     cursor: pointer;
-}
+} 
 
-td a{
+td a{ 
     text-decoration: none;
 }
