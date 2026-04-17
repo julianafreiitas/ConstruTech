@@ -40,6 +40,7 @@ $categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
                 <th>Estado</th>
                 <th>Detalhes</th>
             </tr>
+
             <?php foreach ($_SESSION['produtos'] as $produto): ?>
 
                  <?php if ($categoria_get == '' || $produto['categoria'] === $categoria): ?>
@@ -57,7 +58,7 @@ $categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
                         <?php echo ($produto['quantidade'] > 0) ? 'Disponível' : 'Indisponível'; ?>
                     </td>
                     <td>
-                        <button class="btn">Ver mais</button>
+                        <a href='detalhes.php?id=<?php echo $produto['codigo_produto']; ?>' class='btn'>Ver mais</a>
                     </td>
                 </tr>
                 <?php endif; ?>
