@@ -37,16 +37,31 @@ if (isset($_GET['excluir'])){
    ?>
     <main>
         <div class="topo">
-            <h1>Produtos</h1>
-
-            <?php
-                echo '<ul class="catalogo">';
-                echo'<li><img src="./imagens/filtro.png" alt="filtro"></li>';
-                foreach ($categorias as $kcat => $nome) {
-                echo'<li><a href="produtos.php?categoria='.$kcat.'">'.$nome.'</a></li>';
-                }
-           echo'</ul>';
-            ?>
+            <div class="catalogos">
+                <h1>Produtos</h1>
+                <?php
+                    echo '<ul class="catalogo">';
+                    echo'<li><img src="./imagens/filtro.png" alt="filtro"></li>';
+                    foreach ($categorias as $kcat => $nome) {
+                    echo'<li><a href="produtos.php?categoria='.$kcat.'">'.$nome.'</a></li>';
+                    }
+                echo'</ul>';
+                ?>
+            </div>
+            <div class="tb_estoque">
+                <div class="caixinha">
+                    <img src="./estado/verde.png" width="25x25">
+                    <p>Estoque abastecido</p>
+                </div>
+                <div class="caixinha">
+                    <img src="./estado/amarelo.png" width="25x25">
+                    <p>Estoque intermediário</p>
+                </div>
+                <div class="caixinha">
+                    <img src="./estado/vermelho.png" width="25x25">
+                    <p>Zona crítica</p>
+                </div>
+            </div>
         </div>
         <table>
             <tr>
