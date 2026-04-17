@@ -71,13 +71,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                         <div>
                             <h2 class="titulo">Categoria</h2>
-                            <input class="lista" list="categorias" name="categoria" placeholder="Selecionar categoria">
+                            <input class="lista" list="categorias" name="categoria">
 
-                            <datalist id="categorias">
-                                <option value="Acabamento">
-                                <option value="Bruto">
-                                <option value="Ferramentas">
-                            </datalist>
+                            <select name="categorias">
+                                <option value="bruto">Bruto</option>
+                                <option value="ferramentas">Ferramentas</option>
+                                <option value="acabamento">Acabamento</option>
+                            </select>
                         </div>
 
                         <div>
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div>
                         <h2 class="titulo_descricao">Descrição</h2>
-                        <textarea class="campo_descricao" name="text"></textarea>
+                        <textarea class="campo_descricao" name="descricao"></textarea>
                     </div>
 
                 </div>
