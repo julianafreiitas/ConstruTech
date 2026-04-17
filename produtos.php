@@ -1,6 +1,22 @@
 <?php
 require_once 'init.php';
 $categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
+
+if (isset($_GET['excluir'])){
+    $id = $_GET['excluir'];
+    if (isset($_SESSION['produtos'])){
+        foreach ($_SESSION['produtos'] as $posicao => $produto ){
+        if ( $produto['codigo_produto'] == $id){
+            unset($_SESSION['produtos'][$posicao]);
+            break;
+        }
+    }
+    $_SESSION['produtos'] = array_values($_SESSION['produtos']);
+
+    header("Location: produtos.php");
+    exit;
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +53,7 @@ $categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
                 <th>Produtos</th>
                 <th>Catálogo</th>
                 <th>Valor investido</th>
-                <th>Estado</th>
+                <th>Status</th>
                 <th>Detalhes</th>
             </tr>
 
@@ -55,7 +71,18 @@ $categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
                     <td><?php echo $produto['categoria']; ?></td>
                     <td>R$ <?php echo $produto['preco']; ?></td>
                     <td>
-                        <?php echo ($produto['quantidade'] > 0) ? 'Disponível' : 'Indisponível'; ?>
+                        <?php 
+                        if ($produto['quantidade'] >= 100){
+                            echo "<img src='./estado/verde.png'";
+                        }
+                        elseif ($produto['quantidade'] <= 99 && $produto['quantidade'] >= 50){
+                            echo "<img src='./estado/amarelo.png'";
+                        }
+
+                        else {
+                            echo "<img src='./estado/vermelho.png'";
+                        }
+                        ?>
                     </td>
                     <td>
                         <a href='detalhes.php?id=<?php echo $produto['codigo_produto']; ?>' class='btn'>Ver mais</a>
