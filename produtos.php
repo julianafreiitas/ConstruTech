@@ -43,7 +43,7 @@ $categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
 
             <?php foreach ($_SESSION['produtos'] as $produto): ?>
 
-                 <?php if ($categoria_get == '' || $produto['categoria'] === $categoria): ?>
+                 <?php if ($categoria_get == '' || $produto['categoria'] === $categoria_get): ?>
                 <tr>
                     <td>
                         <div>

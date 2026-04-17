@@ -9,11 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['produtos'][] = [
         'codigo_produto' => $novoCodigo,
         'nome' => $_POST['nome'],
-        'preco' => $_POST['preco'],
+        'preco' => (float)$_POST['preco'],
         'categoria' => $_POST['categoria'],
-        'quantidade' => $_POST['quantidade'],
-        'qtd_minima' => $_POST['qtd_minima'],
-        'qtd_maxima' => $_POST['qtd_maxima'],
+        'quantidade' => (int)$_POST['quantidade'],
+        'qtd_minima' => 1,
+        'qtd_maxima' => 100,
         'descricao' => $_POST['descricao'],
         'imagem' => $_POST['imagem']
     ];
@@ -71,9 +71,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                         <div>
                             <h2 class="titulo">Categoria</h2>
-                            <input class="lista" list="categorias" name="categoria">
 
-                            <select name="categorias">
+                            <select name="categoria" class="lista"> <option value="bruto">Bruto</option>
                                 <option value="bruto">Bruto</option>
                                 <option value="ferramentas">Ferramentas</option>
                                 <option value="acabamento">Acabamento</option>
