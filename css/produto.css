@@ -165,3 +165,33 @@ td img{
 td a{ 
     text-decoration: none;
 }
+
+main .rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rodape{
+    height: 100px;
+    width: 97%;
+    background: #093d70;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow:  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.total{
+    height: 85px;
+    width: 99%;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total h1{
+    color: white;
+}
