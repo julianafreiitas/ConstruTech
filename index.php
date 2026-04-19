@@ -11,7 +11,7 @@
 <body>
     <div class="imagem"></div>
     <form class="formulario">
-        <h1>Login</h1>
+        <h1>Bem-vindo ao Sistema</h1>
         <div class="input_grup">
             <h2>Nome</h2>
             <input class="campo" type="text">
@@ -22,7 +22,7 @@
             <input class="campo" type="password">
         </div>
 
-        <button class="botao">Entrar</button>
+        <a href="produtos.php" class="botao">Entrar</a>
      
 
 </form>

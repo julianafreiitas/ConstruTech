@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div>
                             <h2 class="titulo">Categoria</h2>
 
-                            <select name="categoria" class="lista"> <option value="bruto">Bruto</option>
+                            <select name="categoria" class="lista"> <option value="bruto">Selecione a categotia...</option>
                                 <option value="bruto">Bruto</option>
                                 <option value="ferramentas">Ferramentas</option>
                                 <option value="acabamento">Acabamento</option>

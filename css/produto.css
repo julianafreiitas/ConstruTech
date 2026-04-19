@@ -28,7 +28,7 @@ body{
     height: 250px;
 }
 
-.leftbtn{
+.leftbtn, .sair{
     display: flex;
     flex-direction: column;
     font-size: 1.5em;
@@ -37,7 +37,7 @@ body{
     margin-top: 2.5em;
 }
 
-.leftbtn a{
+.leftbtn a, .sair a{
     text-decoration: none;
     width: 100%;
     padding: 15px;
@@ -45,7 +45,7 @@ body{
     font-weight: 700;
 }
 
-.leftbtn a:hover{
+.leftbtn a:hover, .sair:hover{
     color: rgb(186, 224, 255);
     background-color: #497db1;
 }
@@ -166,12 +166,6 @@ td a{
     text-decoration: none;
 }
 
-main .rodape{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 .rodape{
     height: 100px;
     width: 97%;
@@ -179,6 +173,9 @@ main .rodape{
     margin: 20px;
     border-radius: 5px;
     box-shadow:  5px 5px 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .total{
@@ -194,4 +191,9 @@ main .rodape{
 
 .total h1{
     color: white;
+}
+
+.sair{
+    position: absolute;
+    bottom: 25px;
 }
