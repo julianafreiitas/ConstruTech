@@ -11,6 +11,7 @@ require_once 'init.php';
     <title>Document</title>
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/produto.css">
+    <link rel="stylesheet" href="./css/atualizar.css">
 </head>
 
 <body>
@@ -18,6 +19,23 @@ require_once 'init.php';
     require_once 'partials/header.php';
     ?>
 
+    <div class="linha_top">
+        <h1>Atualizar/Editar</h1>
+
+        <div class="quadrado"></div>
+    </div>
+
+    
+
 </body>
 
 </html>
+
+
+
+
+
+  
+
+
+               

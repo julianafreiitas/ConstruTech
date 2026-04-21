@@ -35,8 +35,8 @@
 
 .quadrado{
     width: 50%;
-    /* background: rgb(199, 69, 69); */
-    /* border: black solid 5px; */
+    /* background: rgb(199, 69, 69);
+    border: black solid 5px; */
     transform: scale(1.2);
     margin-right:auto;
     margin-left: auto;
@@ -105,9 +105,8 @@
 
 
 .conteudo{
-    padding-left: 80px;
+    padding-left: 0px;
 }
-
 
 
 .lista{
@@ -193,3 +192,14 @@ input:focus {
 
 }
 
+.linha_1{
+    height: 150px;
+    width: 121.9%;
+    background: #bfdcfa;
+    padding-right: 0px;
+}
+
+.linha_1 h1{
+    padding: 50px;
+    color: rgb(3, 3, 3);
+}

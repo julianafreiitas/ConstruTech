@@ -39,8 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ?>
 
     <div class="conteudo">
-        <div class="quadrado">
+         <div class="linha_1">
             <h1>Cadastro de produtos</h1>
+            </div>
+        <div class="quadrado">
+           
 
             <form method="POST">
 
