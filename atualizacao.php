@@ -30,40 +30,43 @@ require_once 'init.php';
                 <form class="form" method="POST">
 
 
-                    <div class="linha">
-
-                        <!-- <div class="infor">
-                            <h2 class="titulo">Código do produto</h2>
-                            <input class="campo_p" type="number" name="codigo_produto">
-                        </div> -->
-
-
-
+                <div class="linha">
                         <div class="infor">
                             <h2 class="titulo">Nome</h2>
                             <input class="campo" type="text" name="nome">
                         </div>
 
+
+
+                    <!-- <div class="linha">
+
+                     <div class="infor">
+                            <h3 class="titulo">Código do produto</h3>
+                            <input class="campo_p" type="number" name="codigo_produto">
+                        </div>
+
                         <div class="infor">
-                            <h2 class="titulo_p">Preço</h2>
+                            <h3 class="titulo">Nome</h3>
+                            <input class="campo" type="text" name="nome">
+                        </div>
+
+                        <div class="infor">
+                            <h3 class="titulo_p">Preço</h3>
                             <input class="campo_p" type="text" name="preco">
                         </div>
 
                         <div class="infor">
-                            <h2 class="titulo">Qtd.</h2>
+                            <h3 class="titulo">Qtd.</h3>
                             <input class="campo_quantidade" type="text" name="quantidade">
                         </div>
                     </div>
-
-
-
-
+                    
                     <div class="linha_2">
 
                         <div>
 
                             <div>
-                                <h2 class="titulo">Categoria</h2>
+                                <h3 class="titulo">Categoria</h3>
 
                                 <select name="categoria" class="lista">
                                     <option value="bruto">Selecione a categotia...</option>
@@ -76,13 +79,12 @@ require_once 'init.php';
                             <div>
                                 <input type="text" name="imagem" placeholder="URL da imagem">
 
-
                             </div>
 
                         </div>
 
                         <div>
-                            <h2 class="titulo_descricao">Descrição</h2>
+                            <h3 class="titulo_descricao">Descrição</h3>
                             <textarea class="campo_descricao" name="descricao"></textarea>
                         </div>
 
@@ -95,7 +97,7 @@ require_once 'init.php';
                 </form>
 
 
-            </div>
+            </div> -->
 
 
 
