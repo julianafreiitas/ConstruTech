@@ -1,15 +1,11 @@
 .linha_top{
     height: 150px;
-    width: 121.9%;
-    background: rgb(56, 138, 231);
+    width: 100%;
+    background: #bfdcfa;
+    padding-right: 0px;
 }
 
 .linha_top h1{
     padding: 50px;
-}
-
-.quadrado{
-    height: 500px;
-    margin-left: 100px;
-    background: red;
+    color: rgb(3, 3, 3);
 }

@@ -31,6 +31,14 @@ require_once 'init.php';
 
 
                     <div class="linha">
+
+                        <!-- <div class="infor">
+                            <h2 class="titulo">Código do produto</h2>
+                            <input class="campo_p" type="number" name="codigo_produto">
+                        </div> -->
+
+
+
                         <div class="infor">
                             <h2 class="titulo">Nome</h2>
                             <input class="campo" type="text" name="nome">
