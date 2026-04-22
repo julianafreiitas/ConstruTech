@@ -24,84 +24,52 @@ require_once 'init.php';
             <h1>Atualizar/Editar</h1>
         </div>
         <div class="centro">
-            <div class="quadrado">
-
-
-                <form class="form" method="POST">
-
-
-                <div class="linha">
-                        <div class="infor">
+                <form class="formulario" method="POST">
+                    <div class="info">
+                        <div>
+                            <h3 class="titulo">Código</h3>
+                            <input class="campo_p" type="number" name="codigo_produto">
+                        </div>
+                        <div>
                             <h2 class="titulo">Nome</h2>
                             <input class="campo" type="text" name="nome">
                         </div>
-
-
-
-                    <!-- <div class="linha">
-
-                     <div class="infor">
-                            <h3 class="titulo">Código do produto</h3>
-                            <input class="campo_p" type="number" name="codigo_produto">
+                    </div>
+                    <div class="info">
+                        <div>
+                            <h3 class="titulo">Categoria</h3>
+                            <select name="categoria" class="lista">
+                                <option value="bruto">Selecione a categotia...</option>
+                                <option value="bruto">Bruto</option>    
+                                <option value="ferramentas">Ferramentas</option>
+                                <option value="acabamento">Acabamento</option>
+                            </select>
                         </div>
-
-                        <div class="infor">
-                            <h3 class="titulo">Nome</h3>
-                            <input class="campo" type="text" name="nome">
-                        </div>
-
-                        <div class="infor">
-                            <h3 class="titulo_p">Preço</h3>
-                            <input class="campo_p" type="text" name="preco">
-                        </div>
-
-                        <div class="infor">
+                        <div>
                             <h3 class="titulo">Qtd.</h3>
                             <input class="campo_quantidade" type="text" name="quantidade">
                         </div>
                     </div>
-                    
-                    <div class="linha_2">
-
-                        <div>
-
-                            <div>
-                                <h3 class="titulo">Categoria</h3>
-
-                                <select name="categoria" class="lista">
-                                    <option value="bruto">Selecione a categotia...</option>
-                                    <option value="bruto">Bruto</option>
-                                    <option value="ferramentas">Ferramentas</option>
-                                    <option value="acabamento">Acabamento</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <input type="text" name="imagem" placeholder="URL da imagem">
-
-                            </div>
-
+                    <div class="info">
+                        <div class="preco_url">
+                            <h3 class="titulo_p">Preço</h3>
+                            <input class="campo_p" type="text" name="preco">
+                            <input type="text" name="imagem" placeholder="URL da imagem">
                         </div>
-
                         <div>
                             <h3 class="titulo_descricao">Descrição</h3>
                             <textarea class="campo_descricao" name="descricao"></textarea>
                         </div>
-
                     </div>
-
-                    <div class="linha">
+                    <div class="info">
+                        
+                    </div>
+                    <div class="info">
                         <button type="submit" class="botao_cadastrar">Cadastrar</button>
+                        <button>Cancelar</button>
                     </div>
-
                 </form>
-
-
-            </div> -->
-
-
-
-        </div>
+            </div>
     </div>
 
     </div>
