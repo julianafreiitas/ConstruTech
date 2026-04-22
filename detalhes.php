@@ -49,7 +49,7 @@ if ($index !== false){
 
         
         <div >
-            <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'><b>Excluir</b></a>
+            <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'>Excluir</a>
         </div>
         
 
