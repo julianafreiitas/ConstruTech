@@ -4,13 +4,19 @@ require_once 'init.php';
 $produtoEditando = null;
 
 if (isset($_GET['codigo'])) {
+    $id = $_GET['codigo'];
     foreach ($_SESSION['produtos'] as $p) {
-        if ($p['codigo_produto'] == $_GET['codigo']) {
+        if ($p['codigo_produto'] == $id ) {
             $produtoEditando = $p;
             break;
         }
     }
 }
+
+// if ($produtoEditando === null) {
+//     header("Location: atualizacao.php");
+//     exit;
+// }
 ?>
 
 <?php

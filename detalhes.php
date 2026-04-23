@@ -53,7 +53,7 @@ if ($index !== false) {
             <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'>Excluir</a>
         </div>
 
-        <a href="atualizar.php?codigo=<?php echo $produto['codigo_produto']; ?>">
+        <a href='./atualizacao.php?codigo=<?php echo $produto['codigo_produto']; ?>'>
             Editar produto
         </a>
 
