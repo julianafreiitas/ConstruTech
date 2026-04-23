@@ -1,12 +1,13 @@
 <?php require_once 'init.php';
-$id_url = isset($_GET['id']) ? (int) $_GET['id']: 0;
+$id_url = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 $codigos = array_column($_SESSION['produtos'], 'codigo_produto');
 $index = array_search($id_url, $codigos);
 
-if ($index !== false){
+if ($index !== false) {
     $produto = $_SESSION['produtos'][$index];
-}else{
+} else {
     header('Location: produtos.php');
+    exit;
 }
 ?>
 
@@ -32,12 +33,12 @@ if ($index !== false){
             <div class="box_detalhes">
                 <div class="formatacao">
                     <h1><?php echo $produto['nome']; ?></h1>
-                    <p><?php echo $produto['categoria']?>
+                    <p><?php echo $produto['categoria'] ?>
                     <h2>Valor:R$ <?php echo $produto['preco'] ?></h2>
-                    <p>Estoque:<?php echo $produto['quantidade']?></p>
-                    <p>Código do produto:<?php echo $produto['codigo_produto']?></p>
+                    <p>Estoque:<?php echo $produto['quantidade'] ?></p>
+                    <p>Código do produto:<?php echo $produto['codigo_produto'] ?></p>
                     <h2>Descrição:</h2>
-                    <p><?php echo $produto['descricao']?></p>
+                    <p><?php echo $produto['descricao'] ?></p>
                 </div>
 
             </div>
@@ -47,11 +48,15 @@ if ($index !== false){
             </div>
         </div>
 
-        
-        <div >
+
+        <div>
             <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'>Excluir</a>
         </div>
-        
+
+        <a href="atualizar.php?codigo=<?php echo $produto['codigo_produto']; ?>">
+            Editar produto
+        </a>
+
 
     </div>
 
