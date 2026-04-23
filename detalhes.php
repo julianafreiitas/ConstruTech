@@ -39,6 +39,12 @@ if ($index !== false) {
                     <p>Código do produto:<?php echo $produto['codigo_produto'] ?></p>
                     <h2>Descrição:</h2>
                     <p><?php echo $produto['descricao'] ?></p>
+                    
+                    <div class= "coluna">
+                    <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'>Excluir</a>
+                    <a class="botao_Editar" href="atualizacao.php?codigo=<?php echo $produto['codigo_produto']; ?>">Editar</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -50,7 +56,7 @@ if ($index !== false) {
 
 
         <div>
-            <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'>Excluir</a>
+            
         </div>
 
         <!-- <a href='./atualizacao.php?codigo=<?php echo $produto['codigo_produto']; ?>'>
