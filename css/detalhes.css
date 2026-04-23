@@ -1,4 +1,4 @@
-.conteudo{
+.conteudo {
     height: 890px;
     width: 87%;
     /* background: black; */
@@ -10,92 +10,125 @@
     margin-top: 50px;
 }
 
-.box_detalhes{
-    width: 500px;
+.box_detalhes {
+    width: 550px;
     /* background: red; */
     border-radius: 10px;
     border: #5c91ce solid 2px;
-    transform: scale(1.2); 
+    transform: scale(1.2);
     padding: 25px;
-    box-shadow:  5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
 }
 
-.formatacao{
+.formatacao {
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
 }
 
-.imagem{
-    height: 650px;
-    width: 650px;
+.imagem {
+    height: 550px;
+    width: 550px;
     background: #5c91ce;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow:  5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.img{
-    height: 600px;
-    width: 600px;
+.img {
+    height: 500px;
+    width: 500px;
     border-radius: 10px;
 }
 
- .linha{
+.linha {
     /* background: rebeccapurple; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
     gap: 80px;
-} 
-
-.botao{
-    text-decoration: none;
-    font-weight: 900;
-    height: 50px;
-    width: 150px;
-    padding: 10px 30px;
-    background: rgb(214, 67, 67);
-    border-radius: 5px;
-    border: none;
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.39);
-    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-    color: white;
-    letter-spacing: 0.2px;
 }
 
-.botao:hover{
+.botao {
+    height: 50px;
+    width: 100px;
+    background: rgb(231, 15, 15);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.39);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.botao:hover {
     background-color: rgb(185, 33, 33);
 }
 
-.botao:active{
+.botao:active {
     transform: scale(0.97);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 
-.botao_Editar{
-    text-decoration: none;
-    font-weight: 900;
-    height: 25px;
+.botao_Editar {
+    height: 50px;
     width: 100px;
-    padding: 10px 30px;
-    background: rgb(17, 148, 148);
+    background: rgb(105, 175, 240);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
-    border: none;
+    text-decoration: none;
+    color: white;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.39);
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-    color: white;
-    letter-spacing: 0.2px;
-    padding: 25px;
-    text-align: center;
 }
 
-.coluna{
-    display: flex;
-    gap: 25px;
+.botao_Editar:hover {
+    background-color: rgb(158, 218, 236);
 }
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 400px;
+    width: 90%;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+.cancelar{
+    height: 20px;
+    width: 100px;
+    background: #5c91ce;
+}
+
+.confirmar{
+    height: 20PX;
+    width: 100px;
+    background: red;
+}
+

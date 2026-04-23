@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <div class="conteudo">
         <div class="linha_1">
-            <h1>Editar</h1>
+            <h1>Página de Edição e atualização</h1>
         </div>
         <div class="centro">
             <div class="quadrado">
@@ -119,6 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 name="descricao"><?php echo $produtoEditando['descricao'] ?? ''; ?></textarea>
                         </div>
                         <div>
+                            <h3>Imagem</h3>
                             <input class="img" type="text" name="imagem"
                                 value="<?php echo $produtoEditando['imagem'] ?? ''; ?>">
                         </div>

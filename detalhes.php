@@ -32,17 +32,21 @@ if ($index !== false) {
         <div class="linha">
             <div class="box_detalhes">
                 <div class="formatacao">
-                    <h1><?php echo $produto['nome']; ?></h1>
-                    <p><?php echo $produto['categoria'] ?>
+                    <h1>Nome do Produto: <?php echo $produto['nome']; ?></h1>
+                    <p>Categoria: <?php echo $produto['categoria'] ?>
                     <h2>Valor:R$ <?php echo $produto['preco'] ?></h2>
                     <p>Estoque:<?php echo $produto['quantidade'] ?></p>
                     <p>Código do produto:<?php echo $produto['codigo_produto'] ?></p>
                     <h2>Descrição:</h2>
                     <p><?php echo $produto['descricao'] ?></p>
-                    
-                    <div class= "coluna">
-                    <a class="botao" href='produtos.php?excluir=<?php echo $produto['codigo_produto']; ?>'>Excluir</a>
-                    <a class="botao_Editar" href="atualizacao.php?codigo=<?php echo $produto['codigo_produto']; ?>">Editar</a>
+
+                    <div class="linha">
+                        <button class="botao" onclick="document.getElementById('modalExcluir').showModal()">
+                            Excluir
+                        </button>
+                       
+                        <a class="botao_Editar"
+                            href="atualizacao.php?codigo=<?php echo $produto['codigo_produto']; ?>">Editar</a>
                     </div>
 
                 </div>
@@ -54,9 +58,29 @@ if ($index !== false) {
             </div>
         </div>
 
+         <dialog id="modalExcluir">
+                            <h3>Tem certeza?</h3>
+                            <p>Você está prestes a excluir o produto <strong><?php echo $produto['nome']; ?></strong>.
+                            </p>
+
+                            <div class="linha">
+                             
+                                <form method="dialog">
+                                    <button class="cancelar" type="submit">Cancelar</button>
+                                </form>
+
+                                
+                                <form method="GET" action="produtos.php">
+                                    <input type="hidden" name="excluir"
+                                        value="<?php echo $produto['codigo_produto']; ?>">
+                                    <button class="confirmar" type="submit" class="botao">Confirmar</button>
+                                </form>
+                            </div>
+                        </dialog>
+
 
         <div>
-            
+
         </div>
 
         <!-- <a href='./atualizacao.php?codigo=<?php echo $produto['codigo_produto']; ?>'>
