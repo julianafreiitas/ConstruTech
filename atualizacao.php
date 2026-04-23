@@ -13,10 +13,6 @@ if (isset($_GET['codigo'])) {
     }
 }
 
-// if ($produtoEditando === null) {
-//     header("Location: atualizacao.php");
-//     exit;
-// }
 ?>
 
 <?php
