@@ -70,8 +70,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="linha">
                         <div class="codigo">
                             <h3 class="titulo">Código</h3>
-                            <input class="campo_Codigo" type="text" name="codigo_produto"
-                                value="<?php echo $produtoEditando['codigo_produto'] ?? ''; ?>">
+                           <input class="campo_Codigo" type="text" name="codigo_produto"
+                           value="<?php echo $produtoEditando['codigo_produto'] ?? ''; ?>"
+                         <?php echo "readonly" ?>>
                         </div>
 
                         <div class="infor">
@@ -129,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <div class="linha">
                         <button type="submit" class="botao_cadastrar">Salvar</button>
-                        <button type="button" onclick="window.location.href='produtos.php'">
+                        <button type="button"  class="botao_cadastrar" onclick="window.location.href='produtos.php'">
                             Cancelar
                         </button>
                     </div>
