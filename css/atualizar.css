@@ -1,56 +1,80 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.linha_1{
+    height: 150px;
+    width: 100%;
+    background: #bfdcfa;
+    padding-right: 0px;
 }
 
-.menu{
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 13%;
-    background: #66a6e4;
-    display: flex;
+.linha_1 h1{
+    padding: 50px;
+    color: rgb(3, 3, 3);
+}
+
+.quadrado{
+    width: 23%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-top: 100px;
+    transform: scale(1.2);
+    padding: 0 ;
     flex-direction: column;
-    gap: 15px;
+    background: #2a7fe13d;
+
 }
 
-.menu h2{
-    color: white;
+.quadrado h1{
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 25px;
+}
+
+.linha{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.coluna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
     
 }
 
-.logo{
+.titulo_categoria h3{
     padding-left: 50px;
-    height: 150px;
-    width: 150px;
-    margin-bottom: 100px;
 }
 
-.titulo{
-    color: rgb(0, 0, 0);
-    margin: 0px;
-    font-size: 20px;
+.campo_Codigo{
+    width: 100PX;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: black solid 1px;
+
 }
 
 .campo{
-    width: 350px;
-    height: 40px;
+    width: 200px;
+    height: 30px;
     border-radius: 5px;
     border: black solid 1px;
-    font-size: 25px;
-    
+    font-size: 15px;
 }
 
 .campo_p{
-    width: 130px;
-    height: 40px;
+   width: 100PX;
+    height: 30px;
     border-radius: 5px;
     border: black solid 1px;
+    font-size: 15px;
+
 }
 
 .titulo_p{
@@ -59,22 +83,32 @@
 }
 
 .campo_quantidade{
-    width: 100px;
-    height: 40px;
+    width: 200px;
+    height: 30px;
     border-radius: 5px;
     border: black solid 1px;
-    font-size: 25px;
-    text-align: center;
+    font-size: 15px;
+    text-align: start;
 }
 
-
-.conteudo{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 0px;
+.campo_descricao{
+    height: 45px;
+    width: 340px;
+    resize: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+     border-radius: 5px;
+    border: black solid 1px;
 }
 
+.img{
+    height: 35px;
+    width: 340px;
+    padding: 5px;
+    border-radius: 5px;
+    border: black solid 1px;
+}
 
 .lista{
   padding: 10px;
@@ -82,78 +116,6 @@
   border-radius: 4px;
   width: 350px;
   font-size: 16px;
-  
-}
-
-
-input:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-
-.campo_descricao{
-    height: 100px;
-    width: 330px;
-    resize: none;
-    border-radius: 15px;
-    padding: 5px;
-    font-size: 20px;
-}
-
-.campo_descricao:focus{
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.linha_top{
-    height: 150px;
-    width: 100%;
-    background: #bfdcfa;
-    padding-right: 0px;
-}
-
-.linha_top h1{
-    padding: 50px;
-    color: rgb(3, 3, 3);
-}
-
-/*Topo*/
-
-.formulario{
-    padding: 10px;
-    height: 690px;
-    width: 650px;
-    background-color: #d4e9ff;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    margin-top: 30px;
-    font-size: 20px;
-}
-
-
-.centro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.info{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.preco_url{
-    width: 100px;
+  border-radius: 5px;
+  border: black solid 1px;
 }

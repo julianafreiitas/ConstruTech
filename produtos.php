@@ -91,7 +91,7 @@ if (isset($_GET['excluir'])) {
                             </div>
                         </td>
                         <td><?php echo $produto['categoria']; ?></td>
-                        <td>R$ <?php echo $produto['preco']; ?></td>
+                        <td>R$ <?php echo number_format($valorItem, 2, ',', '.'); ?></td>
                         <td>
                             <?php
                             if ($produto['quantidade'] >= 100) {
