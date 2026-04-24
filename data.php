@@ -66,10 +66,10 @@ $produtos_base = [
     'imagem' => './imagens/areia.jpg',
     ],
     [
-<<<<<<< HEAD
+
     'codigo_produto' => 9,
     'nome' => 'Tijolo Cerâmico 8 Furos',
-    'preco' => 1,29,
+    'preco' => 1.29,
     'categoria' => 'bruto',
     'quantidade' => 580,
     'qtd_minima' => 20,
@@ -77,7 +77,7 @@ $produtos_base = [
     'descricao' => 'Modelo básico, resistente e barato para lavatórios',
     'imagem' => './imagens/tijolo',
     ],
-=======
+    [
     'codigo_produto' => 4,
     'nome' => 'Martelo',
     'preco' => 23.90,
@@ -107,12 +107,11 @@ $produtos_base = [
     'quantidade' => 200,
     'qtd_minima' => 20,
     'qtd_maxima' => 300,
-    'descricao' => 'Possui ponta magnetizada que facilita tanto a colocação quanto a retirada de parafusos em locais de difícil acesso. 
-    Conta ainda com cabo anatômico que proporciona maior conforto ao operador.',
+    'descricao' => 'Possui ponta magnetizada que facilita tanto a colocação quanto a retirada de parafusos em locais de difícil acesso. Conta ainda com cabo anatômico que proporciona maior conforto ao operador.',
     'imagem' => './imagens/chavedefenda.webp',
     ],
     [
-    'codigo_produto' => 7,
+    'codigo_produto' => 10,
     'nome' => ':3',
     'preco' => 12.00,
     'categoria' => 'ferramentas',
@@ -122,7 +121,5 @@ $produtos_base = [
     'descricao' => 'meow meow meow meow meow meow',
     'imagem' => './imagens/meow.gif',
     ]
->>>>>>> 34a081856edf293f969f615b6ea2bf6477200210
-
 
 ];
