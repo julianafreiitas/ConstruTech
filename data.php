@@ -119,7 +119,7 @@ $produtos_base = [
     'qtd_minima' => 20,
     'qtd_maxima' => 300,
     'descricao' => 'meow meow meow meow meow meow',
-    'imagem' => './imagens/meow.gif',
+    'imagem' => './imagens/cta.jpg',
     ]
 
 ];
