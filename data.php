@@ -66,7 +66,6 @@ $produtos_base = [
     'imagem' => './imagens/areia.jpg',
     ],
     [
-
     'codigo_produto' => 9,
     'nome' => 'Tijolo Cerâmico 8 Furos',
     'preco' => 1.29,
