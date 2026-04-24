@@ -110,16 +110,5 @@ $produtos_base = [
     'descricao' => 'Possui ponta magnetizada que facilita tanto a colocação quanto a retirada de parafusos em locais de difícil acesso. Conta ainda com cabo anatômico que proporciona maior conforto ao operador.',
     'imagem' => './imagens/chavedefenda.webp',
     ],
-    [
-    'codigo_produto' => 10,
-    'nome' => ':3',
-    'preco' => 12.00,
-    'categoria' => 'ferramentas',
-    'quantidade' => 200,
-    'qtd_minima' => 20,
-    'qtd_maxima' => 300,
-    'descricao' => 'meow meow meow meow meow meow',
-    'imagem' => './imagens/cta.jpg',
-    ]
 
 ];
