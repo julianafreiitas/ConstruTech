@@ -5,13 +5,13 @@ if (isset($_POST['login'])) {
     $senha = $_POST['pass'];
 
     if (
-        ($usuario === "juliana" && $senha === "123") ||
-        ($usuario === "Juliana" && $senha === "123")
+        ($usuario === "Vincent" && $senha === "123") ||
+        ($usuario === "vincent" && $senha === "123")
     ) {
         header("Location: produtos.php");
         exit;
     } else {
-        echo "<script>alert('Acesso negado! Digite direito >:(');</script>";
+        echo "<script>alert('Acesso negado!');</script>";
     }
 }
 ?>
