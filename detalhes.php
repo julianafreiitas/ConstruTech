@@ -33,10 +33,10 @@ if ($index !== false) {
             <div class="box_detalhes">
                 <div class="formatacao">
                     <h1>Nome do Produto: <?php echo $produto['nome']; ?></h1>
-                    <p>Categoria: <?php echo $produto['categoria'] ?>
                     <h2>Valor:R$ <?php echo $produto['preco'] ?></h2>
-                    <p>Estoque:<?php echo $produto['quantidade'] ?></p>
                     <p>Código do produto:<?php echo $produto['codigo_produto'] ?></p>
+                    <p>Categoria: <?php echo $produto['categoria'] ?>
+                    <p>Estoque:<?php echo $produto['quantidade'] ?></p>
                     <h2>Descrição:</h2>
                     <p><?php echo $produto['descricao'] ?></p>
 
