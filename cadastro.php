@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="linha_2">
 
-                        <div>
+                        <div class="coluna">
 
                             <div>
                                 <h2 class="titulo">Categoria</h2>
@@ -85,7 +85,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
 
                             <div>
-                                <input type="text" name="imagem" placeholder="URL da imagem">
+                                <h2>Imagem</h2>
+                                <input class="img_url" type="text" name="imagem" placeholder="URL da imagem">
 
 
                             </div>

@@ -118,7 +118,7 @@ input:focus {
 
 
 .campo_descricao{
-    height: 100px;
+    height: 125px;
     width: 330px;
     resize: none;
     border-radius: 15px;
@@ -181,4 +181,16 @@ input:focus {
     justify-content: space-around;
     gap: 60px;
     margin-top: 25px;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 20PX;
+}
+
+.img_url{
+    height: 30px;
+    width: 350px;
+    padding: 5px;
 }

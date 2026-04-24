@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <div class="conteudo">
         <div class="linha_1">
-            <h1>Página de Edição e atualização</h1>
+            <h1>Edição e atualização</h1>
         </div>
         <div class="centro">
             <div class="quadrado">
