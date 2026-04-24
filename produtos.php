@@ -85,12 +85,12 @@ if (isset($_GET['excluir'])) {
                     <tr>
                         <td>
                             <div>
-
                                 <img src="<?php echo $produto['imagem']; ?>">
                                 <p><?php echo $produto['nome']; ?></p>
                             </div>
                         </td>
-                        <td><?php echo $produto['categoria']; ?></td>
+                        <td>
+                            <div><?php echo $produto['categoria']; ?></td>
                         <td>R$ <?php echo number_format($valorItem, 2, ',', '.'); ?></td>
                         <td>
                             <?php
