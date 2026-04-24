@@ -44,6 +44,40 @@ $produtos_base = [
     'imagem' => './imagens/torneira',
     ],
     [
+    'codigo_produto' => 7,
+    'nome' => 'Cimento Votoran',
+    'preco' => 34.87,
+    'categoria' => 'bruto',
+    'quantidade' => 20,
+    'qtd_minima' => 20,
+    'qtd_maxima' => 200,
+    'descricao' => 'Modelo popular com boa trabalhabilidade para obras gerais',
+    'imagem' => './imagens/cimento.webp',
+    ],
+    [
+    'codigo_produto' => 8,
+    'nome' => 'Areia Lavada Ensacada',
+    'preco' => 5.99,
+    'categoria' => 'bruto',
+    'quantidade' => 100,
+    'qtd_minima' => 38,
+    'qtd_maxima' => 200,
+    'descricao' => 'Areia limpa pronta para uso em argamassa e concreto',
+    'imagem' => './imagens/areia.jpg',
+    ],
+    [
+
+    'codigo_produto' => 9,
+    'nome' => 'Tijolo Cerâmico 8 Furos',
+    'preco' => 1.29,
+    'categoria' => 'bruto',
+    'quantidade' => 580,
+    'qtd_minima' => 20,
+    'qtd_maxima' => 200,
+    'descricao' => 'Modelo básico, resistente e barato para lavatórios',
+    'imagem' => './imagens/tijolo',
+    ],
+    [
     'codigo_produto' => 4,
     'nome' => 'Martelo',
     'preco' => 23.90,
@@ -73,33 +107,9 @@ $produtos_base = [
     'quantidade' => 200,
     'qtd_minima' => 20,
     'qtd_maxima' => 300,
-    'descricao' => 'Possui ponta magnetizada que facilita tanto a colocação quanto a retirada de parafusos em locais de difícil acesso. 
-    Conta ainda com cabo anatômico que proporciona maior conforto ao operador.',
+    'descricao' => 'Possui ponta magnetizada que facilita tanto a colocação quanto a retirada de parafusos em locais de difícil acesso. Conta ainda com cabo anatômico que proporciona maior conforto ao operador.',
     'imagem' => './imagens/chavedefenda.webp',
     ],
-    [
-    'codigo_produto' => 7,
-    'nome' => 'Cimento Votoran',
-    'preco' => 34.87,
-    'categoria' => 'bruto',
-    'quantidade' => 20,
-    'qtd_minima' => 20,
-    'qtd_maxima' => 200,
-    'descricao' => 'Modelo popular com boa trabalhabilidade para obras gerais',
-    'imagem' => './imagens/cimento.webp',
-    ],
-    [
-    'codigo_produto' => 8,
-    'nome' => 'Areia Lavada Ensacada',
-    'preco' => 5.99,
-    'categoria' => 'bruto',
-    'quantidade' => 100,
-    'qtd_minima' => 38,
-    'qtd_maxima' => 200,
-    'descricao' => 'Areia limpa pronta para uso em argamassa e concreto',
-    'imagem' => './imagens/areia.jpg',
-    ],
-    
     [
     'codigo_produto' => 10,
     'nome' => ':3',
@@ -111,6 +121,5 @@ $produtos_base = [
     'descricao' => 'meow meow meow meow meow meow',
     'imagem' => './imagens/cta.jpg',
     ]
-
 
 ];
