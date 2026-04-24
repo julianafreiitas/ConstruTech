@@ -1,8 +1,8 @@
 <?php require_once 'init.php';
 if (isset($_POST['login'])) {
 
-    $usuario = $_POST['user'];
-    $senha = $_POST['pass'];
+    $usuario = trim($_POST['user']);
+    $senha = trim($_POST['pass']);
 
     if (
         ($usuario === "Vincent" && $senha === "123") ||

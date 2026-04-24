@@ -11,7 +11,7 @@ $categorias = [
 $produtos_base = [
 [
     'codigo_produto' => 1,
-    'nome' => 'Porcelanato Chicargo Gray',
+    'nome' => 'Porcelanato Chicargo',
     'preco' => 114.54,
     'categoria' => 'acabamento',
     'quantidade' => 80,
@@ -34,7 +34,7 @@ $produtos_base = [
     ],
     [
     'codigo_produto' => 3,
-    'nome' => 'Torneira Banheiro Quadrada Cromada',
+    'nome' => 'Torneira Banheiro',
     'preco' => 33.00,
     'categoria' => 'acabamento',
     'quantidade' => 50,
