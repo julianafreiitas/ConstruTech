@@ -29,7 +29,6 @@ if (isset($_POST['login'])) {
     <div class="imagem"></div>
     <form class="formulario" method="POST">
         <h1>Bem-vindo ao Sistema</h1>
-        <h1>da ConstruTech</h1>
         <div class="input_grup">
             <h2>Nome</h2>
             <input class="campo" type="text" name="user">
