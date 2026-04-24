@@ -44,40 +44,6 @@ $produtos_base = [
     'imagem' => './imagens/torneira',
     ],
     [
-    'codigo_produto' => 7,
-    'nome' => 'Cimento Votoran',
-    'preco' => 34.87,
-    'categoria' => 'bruto',
-    'quantidade' => 20,
-    'qtd_minima' => 20,
-    'qtd_maxima' => 200,
-    'descricao' => 'Modelo popular com boa trabalhabilidade para obras gerais',
-    'imagem' => './imagens/cimento.webp',
-    ],
-    [
-    'codigo_produto' => 8,
-    'nome' => 'Areia Lavada Ensacada',
-    'preco' => 5.99,
-    'categoria' => 'bruto',
-    'quantidade' => 100,
-    'qtd_minima' => 38,
-    'qtd_maxima' => 200,
-    'descricao' => 'Areia limpa pronta para uso em argamassa e concreto',
-    'imagem' => './imagens/areia.jpg',
-    ],
-    [
-<<<<<<< HEAD
-    'codigo_produto' => 9,
-    'nome' => 'Tijolo Cerâmico 8 Furos',
-    'preco' => 1,29,
-    'categoria' => 'bruto',
-    'quantidade' => 580,
-    'qtd_minima' => 20,
-    'qtd_maxima' => 200,
-    'descricao' => 'Modelo básico, resistente e barato para lavatórios',
-    'imagem' => './imagens/tijolo',
-    ],
-=======
     'codigo_produto' => 4,
     'nome' => 'Martelo',
     'preco' => 23.90,
@@ -113,6 +79,29 @@ $produtos_base = [
     ],
     [
     'codigo_produto' => 7,
+    'nome' => 'Cimento Votoran',
+    'preco' => 34.87,
+    'categoria' => 'bruto',
+    'quantidade' => 20,
+    'qtd_minima' => 20,
+    'qtd_maxima' => 200,
+    'descricao' => 'Modelo popular com boa trabalhabilidade para obras gerais',
+    'imagem' => './imagens/cimento.webp',
+    ],
+    [
+    'codigo_produto' => 8,
+    'nome' => 'Areia Lavada Ensacada',
+    'preco' => 5.99,
+    'categoria' => 'bruto',
+    'quantidade' => 100,
+    'qtd_minima' => 38,
+    'qtd_maxima' => 200,
+    'descricao' => 'Areia limpa pronta para uso em argamassa e concreto',
+    'imagem' => './imagens/areia.jpg',
+    ],
+    
+    [
+    'codigo_produto' => 10,
     'nome' => ':3',
     'preco' => 12.00,
     'categoria' => 'ferramentas',
@@ -122,7 +111,6 @@ $produtos_base = [
     'descricao' => 'meow meow meow meow meow meow',
     'imagem' => './imagens/cta.jpg',
     ]
->>>>>>> 34a081856edf293f969f615b6ea2bf6477200210
 
 
 ];
